@@ -1,0 +1,90 @@
+---
+interface Props {
+  data: {
+    name: string;
+    img: string;
+  }[];
+}
+
+const { data } = Astro.props;
+---
+
+<section
+  class="bg-primary pt-10 pb-5 flex flex-col items-center overflow-hidden"
+>
+  <div class="w-full max-w-6xl px-4">
+    <h3 class="text-3xl text-white">They choose us</h3>
+  </div>
+  <div class="logos">
+    <div class="logos-slide">
+      {data.map((item) => <img src={item.img} alt={item.name} />)}
+      {data.map((item) => <img src={item.img} alt={item.name} />)}
+      {data.map((item) => <img src={item.img} alt={item.name} />)}
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1410.63px);
+    }
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #1b6480);
+  }
+
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #1b6480);
+  }
+
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  .logos-slide img {
+    display: inline-block;
+    height: 50px;
+    margin: 0 40px;
+  }
+
+  .logos-slide img:hover {
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+</style>
+
+<script>
+  // const copy = window.document.querySelector(".logos-slide")!.cloneNode(true);
+  // window.document.querySelector(".logos")!.appendChild(copy);
+</script>

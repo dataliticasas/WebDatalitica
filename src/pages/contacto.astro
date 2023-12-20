@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Contact from "../components/Contact.tsx";
+import Divider from "../components/Divider.astro";
+
+import { config } from "../../config.ts";
+
+const { navigation } = config;
+const el = navigation.find((el) => el.text === "Contacto")!;
+---
+
+<Layout title={el?.title || "DATALITICA"}>
+  <main>
+    <Divider flat={false} />
+    <Contact config={config.emailjs_config} client:load layout="page" />
+    <Divider />
+  </main>
+</Layout>

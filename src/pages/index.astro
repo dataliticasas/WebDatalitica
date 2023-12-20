@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Divider from "../components/Divider.astro";
+import Hero from "../components/Hero.astro";
+import Expertise from "../components/Expertise.tsx";
+import Cards from "../components/Cards.astro";
+import Clients from "../components/Clients.astro";
+import Testimonials from "../components/Testimonials.tsx";
+import Sinergy from "../components/Sinergy.tsx";
+import Contact from "../components/Contact.tsx";
+
+import { config } from "../../config.ts";
+
+const { navigation } = config;
+const el = navigation.find((el) => el.text === "Home")!;
+---
+
+<Layout title={el?.title || "DATALITICA"}>
+  <main>
+    <Hero />
+    <Divider />
+    <Expertise data={config.expertise} client:only />
+    <Cards />
+    <Divider flat={false} rtl={true} />
+    <Clients data={config.clients} />
+    <!-- <Testimonials data={config.testimonials} client:only /> -->
+    <!-- <Sinergy data={config.sinergys} layout="home" client:only /> -->
+    <Divider flat={false} />
+    <Contact config={config.emailjs_config} client:only />
+    <Divider />
+  </main>
+</Layout>
+
+<style></style>

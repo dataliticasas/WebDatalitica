@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/es/Layout.astro";
+import Divider from "../../components/es/Divider.astro";
+import Aplications from "../../components/es/Aplications.tsx";
+import Contact from "../../components/es/Contact.tsx";
+import Panels from '../../components/es/Panels.tsx'
+
+import { config } from "../../../config.es.ts";
+
+const { navigation } = config;
+const el = navigation.find((el) => el.text === "Soluciones")!;
+---
+
+<Layout title={el?.title || "DATALITICA"}>
+  <main>
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-6xl px-4 mt-14 mb-6">
+        <h3 class="text-3xl font-semibold mb-4">Soluciones</h3>
+        <p class="md:w-6/12">
+          Brindamos soluciones tecnológicas a problemas de todo tipo. Procesamos
+          problemas operativos, logísticos, productivos y brindamos resultados
+          que sean escalables, sostenibles y de fácil curva de aprendizaje. Con
+          una mezcla de consultoría y aplicaciones a la medida de las
+          necesidades de los usuarios y dashboards para visualizar la data
+          generada de manera objetiva y en tiempo real.
+        </p>
+      </div>
+    </div>
+    <Divider />
+    <Aplications data={config.aplications} client:load />
+    <Divider flat={false} rtl={true} />
+    <Panels data={config.panels} client:load />
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-6xl px-4 mt-14 mb-6 flex flex-col md:flex-row">
+        <div class="flex flex-col flex-1 justify-center">
+          <h3
+            class="text-3xl font-semibold mb-4 border-l-8 border-[#F6A728] pl-2"
+          >
+            Consultoría
+          </h3>
+          <p class="md:w-10/12">
+            Asesoramos a nuestros clientes y los acompañamos en el proceso de
+            digitalización de su empresa. Nuestro equipo de expertos trabajará
+            contigo para entender tus necesidades específicas y diseñar
+            soluciones que se ajusten perfectamente a tus objetivos.
+          </p>
+        </div>
+        <div class="flex flex-1 mt-10 md:mt-0">
+          <img src="/images/mi7.png" />
+        </div>
+      </div>
+    </div>
+    <Divider flat={false} />
+    <Contact config={config.emailjs_config} client:only />
+    <Divider />
+  </main>
+</Layout>

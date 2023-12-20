@@ -1,0 +1,28 @@
+---
+interface Props {
+  flat?: boolean;
+  rtl?: boolean;
+}
+
+const { flat = true, rtl = false } = Astro.props;
+---
+
+<div class={`flex w-full my-10 ${rtl ? "justify-end" : "justify-start"}`}>
+  <div class={`flex items-center ${!flat ? "w-8/12" : "w-full"}`}>
+    {!flat && rtl && <img src="/images/k9z.png" width="80" />}
+    <div class={`w-full ${rtl ? 'mt-1' : '-mt-1'}`}>
+      <div class="lines"></div>
+    </div>
+    {!flat && !rtl && <img src="/images/k9z.png" width="80" class="transform rotate-180" />}
+  </div>
+</div>
+
+<style>
+  .lines {
+    padding: 4px;
+    border-left: none;
+    border-right: none;
+    border-top: 3px solid #f6a728;
+    border-bottom: 3px solid #f6a728;
+  }
+</style>

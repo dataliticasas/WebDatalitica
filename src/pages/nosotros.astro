@@ -1,0 +1,69 @@
+---
+import Layout from "../layouts/Layout.astro";
+import About from "../components/About.astro";
+import Divider from "../components/Divider.astro";
+import Sinergy from "../components/Sinergy";
+import Methodology from "../components/Methodology.astro";
+import Successes from "../components/Successes.astro";
+import Clients from "../components/Clients.astro";
+import Testimonials from "../components/Testimonials.tsx";
+import Team from "../components/Team.tsx";
+import Contact from "../components/Contact.tsx";
+
+import { config } from "../../config.ts";
+
+const { navigation } = config;
+const el = navigation.find((el) => el.text === "Nosotros")!;
+---
+
+<Layout title={el?.title || "DATALITICA"}>
+  <main>
+    <About />
+    <Divider />
+    <Methodology />
+    <Divider flat={false} rtl={true} />
+    <Successes />
+    <div class="block md:hidden"><Divider /></div>
+    <div class="relative w-full my-10">
+      <div
+        class="relative z-10 w-full h-full flex flex-col items-center justify-center"
+      >
+        <div class="w-full max-w-6xl md:px-4 md:mt-10 mb-4 lg:pr-14 xl:pr-0">
+          <Sinergy data={config.sinergys} layout="us" client:only />
+        </div>
+        <!-- <div class="w-full overflow-hidden">
+          <Clients data={config.clients} />
+        </div> -->
+
+        <!-- <div class="w-full max-w-6xl px-4 mb-14 mt-4 lg:pr-14 xl:pr-0">
+          <Testimonials data={config.testimonials} client:only />
+        </div> -->
+      </div>
+      <div class="hidden lg:block absolute top-0 w-full h-full">
+        <div
+          class="h-full border-y-[3px] border-r-[3px] border-[#F6A728] py-2 pr-2 lg:mr-5 xl:mr-10 2xl:mr-20 relative"
+        >
+          <div class="absolute w-full h-full"></div>
+          <div
+            class="h-full border-y-[3px] border-r-[3px] border-[#F6A728] flex"
+          >
+            <div class="flex flex-1 relative">
+              <div class="absolute -bottom-[50px] w-full h-[100px] bg-white">
+                <img
+                  src="/images/k9z.png"
+                  width="80"
+                  class="absolute right-0 bottom-[5px]"
+                />
+              </div>
+            </div>
+            <div class="flex flex-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Team data={config.team} pics={config.pics} client:only />
+    <Divider flat={false} />
+    <Contact config={config.emailjs_config} client:only />
+    <Divider />
+  </main>
+</Layout>

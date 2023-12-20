@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Divider from "../components/Divider.astro";
+import Aplications from "../components/Aplications.tsx";
+import Contact from "../components/Contact.tsx";
+import Panels from "../components/Panels.tsx";
+
+import { config } from "../../config.ts";
+
+const { navigation } = config;
+const el = navigation.find((el) => el.text === "Soluciones")!;
+---
+
+<Layout title={el?.title || "DATALITICA"}>
+  <main>
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-6xl px-4 mt-14 mb-6">
+        <h3 class="text-3xl font-semibold mb-4">Solutions</h3>
+        <p class="md:w-6/12">
+          We provide technological solutions to problems of all kinds. 
+          We process operational, logistical and productive problems and provide results that are scalable, 
+          sustainable and with an easy learning curve. With a mix of consulting and applications personalized 
+          to the needs of the users, and dashboards to visualize and analyze the data in real time.
+        </p>
+      </div>
+    </div>
+    <Divider />
+    <Aplications data={config.aplications} client:load />
+    <Divider flat={false} rtl={true} />
+    <Panels data={config.panels} client:load />
+    <div class="w-full flex justify-center" id="Consultoría">
+      <div class="w-full max-w-6xl px-4 mt-14 mb-6 flex flex-col md:flex-row">
+        <div class="flex flex-col flex-1 justify-center">
+          <h3
+            class="text-3xl font-semibold mb-4 border-l-8 border-[#F6A728] pl-2"
+          >
+          Consulting
+          </h3>
+          <p class="md:w-10/12">
+            We advise our clients and accompany them in the digitization process of their company.
+             Our team of experts will work with you to understand your specific needs and design solutions that perfectly fit your goals.
+          </p>
+        </div>
+        <div class="flex flex-1 mt-10 md:mt-0">
+          <img src="/images/mi7.png" />
+        </div>
+      </div>
+    </div>
+    <Divider flat={false} />
+    <Contact config={config.emailjs_config} client:only />
+    <Divider />
+  </main>
+</Layout>
