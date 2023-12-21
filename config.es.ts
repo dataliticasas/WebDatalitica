@@ -255,4 +255,10 @@ export const config = {
     { img: "/images/k18.png", text: "Equipo DATALITICA, 2023." },
     { img: "/images/kc7.png", text: "Equipo DATALITICA, 2022." },
   ],
+  awards: [
+    {
+      name: "DesignRush",
+      img: "/images/DR.png",
+    },
+  ]
 };

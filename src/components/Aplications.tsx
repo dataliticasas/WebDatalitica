@@ -30,7 +30,7 @@ const Aplications: FC<Props> = ({ data }) => {
         <div className="w-full h-full max-w-6xl px-4 relative">
           <div className="flex flex-col md:flex-row my-5 md:my-10">
             <div className="hidden md:block md:w-8/12 md:pr-20 justify-center">
-              <img
+              <img 
                 className="hidden md:block object-contain"
                 src="/images/cc7.png"
               />
