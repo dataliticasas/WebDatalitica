@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { a } from "../../dist/_astro/navigation.333248a7";
+// import { a } from "../../dist/_astro/navigation.333248a7";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation } from "swiper/modules";
 // import "swiper/css";
