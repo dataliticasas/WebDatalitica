@@ -116,88 +116,32 @@ export const config = {
   ],
   sinergys: [
     {
-      name: "Gestya",
-      img: "/images/cvj.png",
+      name: "Infomanager",
+      img: "/images/Logos clientes/color/LogoInfomanager.png",
     },
     {
-      name: "Pumpcontrol",
-      img: "/images/d8j.png",
+      name: "Matijasevich",
+      img: "/images/Logos clientes/color/LogoMatijasevich.png",
     },
     {
       name: "Praxys",
-      img: "/images/bb9.png",
+      img: "/images/Logos clientes/color/LogoPraxys.png",
     },
     {
-      name: "Infomanager",
-      img: "/images/df2.png",
+      name: "PumpControl",
+      img: "/images/Logos clientes/color/LogoPumpControl.png",
+    },
+    {
+      name: "RecursosInformaticos",
+      img: "/images/Logos clientes/color/LogoRecursosInformaticos.png",
+    },
+    {
+      name: "Softland",
+      img: "/images/Logos clientes/color/LogoSoftland.png",
     },
     {
       name: "Synagro",
-      img: "/images/cds.png",
-    },
-    {
-      name: "Matijasevic",
-      img: "/images/dd1.png",
-    },
-    {
-      name: "Abalum",
-      img: "/images/Logos clientes/color/LogoAbalum.png",
-    },
-    {
-      name: "AgroEnergia",
-      img: "/images/Logos clientes/color/LogoAgroenergia (2).png",
-    },
-    {
-      name: "AgroSupplies",
-      img: "/images/Logos clientes/color/LogoAgroEnergia.png",
-    },
-    {
-      name: "AgroEnergy",
-      img: "/images/Logos clientes/color/LogoAgroEnergy.png",
-    },
-    {
-      name: "Agroimpulso",
-      img: "/images/Logos clientes/color/LogoAgroimpulso.png",
-    },
-    {
-      name: "AzulEmergencias",
-      img: "/images/Logos clientes/color/LogoAzulEmergencias.png",
-    },
-    {
-      name: "ByV",
-      img: "/images/Logos clientes/color/LogoByV.png",
-    },
-    {
-      name: "CoyCo",
-      img: "/images/Logos clientes/color/LogoCoyCo.png",
-    },
-    {
-      name: "ElLimon",
-      img: "/images/Logos clientes/color/LogoElLimon.png",
-    },
-    {
-      name: "EquipoAgil",
-      img: "/images/Logos clientes/color/LogoEquipoAgil.png",
-    },
-    {
-      name: "Nich",
-      img: "/images/Logos clientes/color/LogoNich.png",
-    },
-    {
-      name: "Proagro",
-      img: "/images/Logos clientes/color/LogoProagro.png",
-    },
-    {
-      name: "SanMiguel",
-      img: "/images/Logos clientes/color/LogoSanMiguel.png",
-    },
-    {
-      name: "Vidrial",
-      img: "/images/Logos clientes/color/LogoVidrial.png",
-    },
-    {
-      name: "VIS",
-      img: "/images/Logos clientes/color/LogoVIS.png",
+      img: "/images/Logos clientes/color/LogoSynagro.png",
     },
   ],
   testimonials: [
@@ -280,6 +224,12 @@ export const config = {
       img: "/images/Equipo/Perfil Meli.jpg",
       job: "CFO",
       linkedin: "https://www.linkedin.com/",
+    },
+    {
+      name: "Gabriel Zucchi",
+      img: "/images/Equipo/Perfil Gabriel.jpg",
+      job: "CEO",
+      linkedin: "https://www.linkedin.com/in/gabrielzucchi/",
     },
   ],
   aplications: [
