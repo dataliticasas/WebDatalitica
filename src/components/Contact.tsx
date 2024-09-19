@@ -29,6 +29,7 @@ const Input = ({
   handleChange,
   handleBlur,
   value,
+  label,
   errors,
 }: {
   layout: "page" | "section";
@@ -37,6 +38,7 @@ const Input = ({
   placeholder: string;
   handleChange?: any;
   handleBlur?: any;
+  label:string
   value?: any;
   errors?: boolean;
 }) => {
@@ -48,7 +50,7 @@ const Input = ({
             errors ? "text-red-900" : "text-gray-900"
           }`}
         >
-          {name}
+          {label}
         </label>
         <div className="relative">
           <input
@@ -317,6 +319,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                         layout={layout}
                         type="text"
                         name="name"
+                        label="Name"
                         placeholder="Your name"
                         handleChange={handleChange}
                         handleBlur={handleBlur}
@@ -329,6 +332,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                         layout={layout}
                         type="email"
                         name="email"
+                        label="Email"
                         placeholder="hello@gmail.com"
                         handleChange={handleChange}
                         handleBlur={handleBlur}
@@ -342,6 +346,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                     layout={layout}
                     type="text"
                     name="subject"
+                    label="Subject"
                     placeholder="Subject"
                     handleChange={handleChange}
                     handleBlur={handleBlur}
@@ -361,6 +366,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                       layout={layout}
                       type="text"
                       name="message"
+                      label="Message"
                       placeholder="Your message"
                       handleChange={handleChange}
                       handleBlur={handleBlur}

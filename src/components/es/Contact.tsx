@@ -29,6 +29,7 @@ const Input = ({
   handleChange,
   handleBlur,
   value,
+  label,
   errors,
 }: {
   layout: "page" | "section";
@@ -38,6 +39,7 @@ const Input = ({
   handleChange?: any;
   handleBlur?: any;
   value?: any;
+  label: string;
   errors?: boolean;
 }) => {
   if (layout === "section") {
@@ -48,7 +50,7 @@ const Input = ({
             errors ? "text-red-900" : "text-gray-900"
           }`}
         >
-          {name}
+          {label}
         </label>
         <div className="relative">
           <input
@@ -331,6 +333,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                         layout={layout}
                         type="text"
                         name="name"
+                        label="Nombre"
                         placeholder="Nombre de ejemplo"
                         handleChange={handleChange}
                         handleBlur={handleBlur}
@@ -343,6 +346,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                         layout={layout}
                         type="email"
                         name="email"
+                        label="Email"
                         placeholder="hello@gmail.com"
                         handleChange={handleChange}
                         handleBlur={handleBlur}
@@ -356,6 +360,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                     layout={layout}
                     type="text"
                     name="subject"
+                    label="Trabajo"
                     placeholder="Trabajo"
                     handleChange={handleChange}
                     handleBlur={handleBlur}
@@ -375,6 +380,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                       layout={layout}
                       type="text"
                       name="message"
+                      label="Mensaje"
                       placeholder="Tu mensaje"
                       handleChange={handleChange}
                       handleBlur={handleBlur}
