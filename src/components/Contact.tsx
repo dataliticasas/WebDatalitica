@@ -315,8 +315,8 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                     <div className={`${layout === "page" && "md:w-6/12"}`}>
                       <Input
                         layout={layout}
-                        name="Name"
                         type="text"
+                        name="name"
                         placeholder="Your name"
                         handleChange={handleChange}
                         handleBlur={handleBlur}
@@ -341,7 +341,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                   <Input
                     layout={layout}
                     type="text"
-                    name="Subject"
+                    name="subject"
                     placeholder="Subject"
                     handleChange={handleChange}
                     handleBlur={handleBlur}
@@ -360,7 +360,7 @@ const Contact: FC<Props> = ({ layout = "section", config }) => {
                     <Input
                       layout={layout}
                       type="text"
-                      name="Message"
+                      name="message"
                       placeholder="Your message"
                       handleChange={handleChange}
                       handleBlur={handleBlur}
