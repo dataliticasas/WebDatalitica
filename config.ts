@@ -12,7 +12,7 @@ export const config = {
     // { href: "/tutoriales", text: "Tutoriales", secondary: true },
   ],
   emailjs_config: {
-    serviceId: "service_fjfncwg",
+    serviceId: "service_6t6ids6",
     templateId: "template_eg0lhbb",
     publicKey: "7Evl09-46a_dGoMzO",
   },
@@ -45,74 +45,105 @@ export const config = {
   ],
   clients: [
     {
-      name: "Abalum",
-      img: "/images/Logos clientes/Abalum.png",
+      name: "Abalum - W",
+      img: "/images/Logos clientes/blanco/Abalum - W.png",
     },
     {
-      name: "AgroEnergia",
-      img: "/images/Logos clientes/AgroEnergia.png",
+      name: "Agro Energy Reconquista - W",
+      img: "/images/Logos clientes/blanco/Agro Energy Reconquista - W.png",
     },
     {
-      name: "AgroEnergy",
-      img: "/images/Logos clientes/AgroEnergy.png",
+      name: "Agroenergia - W",
+      img: "/images/Logos clientes/blanco/Agroenergia - W.png",
     },
     {
-      name: "AgroImpulso",
-      img: "/images/Logos clientes/AgroImpulso.png",
+      name: "Agroimpulso - W",
+      img: "/images/Logos clientes/blanco/Agroimpulso - W.png",
     },
     {
-      name: "Agrosupplies",
-      img: "/images/Logos clientes/Agrosupplies.png",
+      name: "AgroSupplies - W",
+      img: "/images/Logos clientes/blanco/AgroSupplies - W.png",
     },
     {
-      name: "AzulEmergencia",
-      img: "/images/Logos clientes/AzulEmergencia.png",
+      name: "Azul Emergencias - W",
+      img: "/images/Logos clientes/blanco/Azul Emergencias - W.png",
     },
     {
-      name: "CoyCo",
-      img: "/images/Logos clientes/CoyCo.png",
+      name: "ByV - W",
+      img: "/images/Logos clientes/blanco/ByV - W.png",
     },
     {
-      name: "ElLimon",
-      img: "/images/Logos clientes/ElLimon.png",
+      name: "COyCO - W",
+      img: "/images/Logos clientes/blanco/COyCO - W.png",
     },
     {
-      name: "ElPortezuelo",
-      img: "/images/Logos clientes/ElPortezuelo.png",
+      name: "DPV - W",
+      img: "/images/Logos clientes/blanco/DPV - W.png",
     },
     {
-      name: "EquipoAgil",
-      img: "/images/Logos clientes/EquipoAgil.png",
+      name: "Ecoland - W",
+      img: "/images/Logos clientes/blanco/Ecoland - W.png",
     },
     {
-      name: "GLB",
-      img: "/images/Logos clientes/GLB.png",
+      name: "El Limon - W",
+      img: "/images/Logos clientes/blanco/El Limon - W.png",
     },
     {
-      name: "Nich",
-      img: "/images/Logos clientes/Nich.png",
+      name: "Equipo Agil - W",
+      img: "/images/Logos clientes/blanco/Equipo Agil - W.png",
     },
     {
-      name: "ProAgro",
-      img: "/images/Logos clientes/ProAgro.png",
+      name: "Frenos y Elasticos La Banda - W",
+      img: "/images/Logos clientes/blanco/Frenos y Elasticos La Banda - W.png",
     },
     {
-      name: "SanMiguel",
-      img: "/images/Logos clientes/SanMiguel.png",
+      name: "GLB - W",
+      img: "/images/Logos clientes/blanco/GLB - W.png",
     },
     {
-      name: "SoutherSky",
-      img: "/images/Logos clientes/SoutherSky.png",
+      name: "Gross - W",
+      img: "/images/Logos clientes/blanco/Gross - W.png",
     },
     {
-      name: "Vidrial",
-      img: "/images/Logos clientes/Vidrial.png",
+      name: "Grupo Penna - W",
+      img: "/images/Logos clientes/blanco/Grupo Penna - W.png",
     },
     {
-      name: "Vis",
-      img: "/images/Logos clientes/Vis.png",
+      name: "Lacteos VP - W",
+      img: "/images/Logos clientes/blanco/Lacteos VP - W.png",
     },
-    
+    {
+      name: "Lubricantes BBC - W",
+      img: "/images/Logos clientes/blanco/Lubricantes BBC - W.png",
+    },
+    {
+      name: "Proagro-w",
+      img: "/images/Logos clientes/blanco/Proagro-w.png",
+    },
+    {
+      name: "Propanorte - W",
+      img: "/images/Logos clientes/blanco/Propanorte - W.png",
+    },
+    {
+      name: "San Miguel - W",
+      img: "/images/Logos clientes/blanco/San Miguel - W.png",
+    },
+    {
+      name: "SRS - W",
+      img: "/images/Logos clientes/blanco/SRS - W.png",
+    },
+    {
+      name: "Vidrial - W",
+      img: "/images/Logos clientes/blanco/Vidrial - W.png",
+    },
+    {
+      name: "VIMI SA - W",
+      img: "/images/Logos clientes/blanco/VIMI SA - W.png",
+    },
+    {
+      name: "VIS - W",
+      img: "/images/Logos clientes/blanco/VIS - W.png",
+    },
   ],
   sinergys: [
     {

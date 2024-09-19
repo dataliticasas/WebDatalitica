@@ -11,9 +11,9 @@ export const config = {
     // { href: "/tutoriales", text: "Tutoriales", secondary: true },
   ],
   emailjs_config: {
-    serviceId: "service_snjq9ao",
-    templateId: "template_lws9s6f",
-    publicKey: "dD1CXd4jztbiahV30",
+    serviceId: "service_6t6ids6",
+    templateId: "template_eg0lhbb",
+    publicKey: "7Evl09-46a_dGoMzO",
   },
   socials: [
     // { href: "https://www.facebook.com/", icon: "facebook" },
@@ -44,32 +44,104 @@ export const config = {
   ],
   clients: [
     {
-      name: "AgroImpulso",
-      img: "/images/b65.png",
+      name: "Abalum - W",
+      img: "/images/Logos clientes/blanco/Abalum - W.png",
     },
     {
-      name: "Nich",
-      img: "/images/bxa.png",
+      name: "Agro Energy Reconquista - W",
+      img: "/images/Logos clientes/blanco/Agro Energy Reconquista - W.png",
     },
     {
-      name: "ByV Transportes SRL",
-      img: "/images/v34.png",
+      name: "Agroenergia - W",
+      img: "/images/Logos clientes/blanco/Agroenergia - W.png",
     },
     {
-      name: "Linea 130 El Limon SRL",
-      img: "/images/vgg.png",
+      name: "AgroImpulso - W",
+      img: "/images/Logos clientes/blanco/Agroimpulso - W.png",
     },
     {
-      name: "GLB",
-      img: "/images/jhg.png",
+      name: "AgroSupplies - W",
+      img: "/images/Logos clientes/blanco/AgroSupplies - W.png",
     },
     {
-      name: "Agro Supplies",
-      img: "/images/hg5.png",
+      name: "Azul Emergencias - W",
+      img: "/images/Logos clientes/blanco/Azul Emergencias - W.png",
     },
     {
-      name: "ProAgro",
-      img: "/images/hhc.png",
+      name: "ByV - W",
+      img: "/images/Logos clientes/blanco/ByV - W.png",
+    },
+    {
+      name: "COyCO - W",
+      img: "/images/Logos clientes/blanco/COyCO - W.png",
+    },
+    {
+      name: "DPV - W",
+      img: "/images/Logos clientes/blanco/DPV - W.png",
+    },
+    {
+      name: "Ecoland - W",
+      img: "/images/Logos clientes/blanco/Ecoland - W.png",
+    },
+    {
+      name: "El Limon - W",
+      img: "/images/Logos clientes/blanco/El Limon - W.png",
+    },
+    {
+      name: "Equipo Agil - W",
+      img: "/images/Logos clientes/blanco/Equipo Agil - W.png",
+    },
+    {
+      name: "Frenos y Elasticos La Banda - W",
+      img: "/images/Logos clientes/blanco/Frenos y Elasticos La Banda - W.png",
+    },
+    {
+      name: "GLB - W",
+      img: "/images/Logos clientes/blanco/GLB - W.png",
+    },
+    {
+      name: "Gross - W",
+      img: "/images/Logos clientes/blanco/Gross - W.png",
+    },
+    {
+      name: "Grupo Penna - W",
+      img: "/images/Logos clientes/blanco/Grupo Penna - W.png",
+    },
+    {
+      name: "Lacteos VP - W",
+      img: "/images/Logos clientes/blanco/Lacteos VP - W.png",
+    },
+    {
+      name: "Lubricantes BBC - W",
+      img: "/images/Logos clientes/blanco/Lubricantes BBC - W.png",
+    },
+    {
+      name: "Proagro-w",
+      img: "/images/Logos clientes/blanco/Proagro-w.png",
+    },
+    {
+      name: "Propanorte - W",
+      img: "/images/Logos clientes/blanco/Propanorte - W.png",
+    },
+    {
+      name: "San Miguel - W",
+      img: "/images/Logos clientes/blanco/San Miguel - W.png",
+    },
+    {
+      name: "SRS - W",
+      img: "/images/Logos clientes/blanco/SRS - W.png",
+    },
+    {
+      name: "Vidrial - W",
+      img: "/images/Logos clientes/blanco/Vidrial - W.png",
+    },
+    {
+      name: "VIMI SA - W",
+      img: "/images/Logos clientes/blanco/VIMI SA - W.png",
+    },
+    {
+      name: "VIS - W",
+      img: "/images/Logos clientes/blanco/VIS - W.png",
     },
   ],
   sinergys: [

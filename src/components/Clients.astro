@@ -17,9 +17,15 @@ const { data } = Astro.props;
   </div>
   <div class="logos">
     <div class="logos-slide">
-      {data.map((item) => <img src={item.img} alt={item.name} />)}
-      {data.map((item) => <img src={item.img} alt={item.name} />)}
-      {data.map((item) => <img src={item.img} alt={item.name} />)}
+      {data.map((item) => (
+        <img src={item.img} alt={item.name} />
+      ))}
+      {data.map((item) => (
+        <img src={item.img} alt={item.name} />
+      ))}
+      {data.map((item) => (
+        <img src={item.img} alt={item.name} />
+      ))}
     </div>
   </div>
 </section>
@@ -39,6 +45,7 @@ const { data } = Astro.props;
     padding: 60px 0;
     white-space: nowrap;
     position: relative;
+    cursor: grab;
   }
 
   .logos:before,
@@ -72,7 +79,7 @@ const { data } = Astro.props;
 
   .logos-slide img {
     display: inline-block;
-    height: 50px;
+    height: 80px;
     margin: 0 40px;
   }
 
@@ -85,6 +92,51 @@ const { data } = Astro.props;
 </style>
 
 <script>
-  // const copy = window.document.querySelector(".logos-slide")!.cloneNode(true);
-  // window.document.querySelector(".logos")!.appendChild(copy);
+  const logosContainer = document.querySelector(".logos");
+  let isDragging = false;
+  let startPos = 0;
+  let scrollLeft = 0;
+
+  logosContainer.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    logosContainer.classList.add("active");
+    startPos = e.pageX - logosContainer.offsetLeft;
+    scrollLeft = logosContainer.scrollLeft;
+  });
+
+  logosContainer.addEventListener("mouseleave", () => {
+    isDragging = false;
+    logosContainer.classList.remove("active");
+  });
+
+  logosContainer.addEventListener("mouseup", () => {
+    isDragging = false;
+    logosContainer.classList.remove("active");
+  });
+
+  logosContainer.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - logosContainer.offsetLeft;
+    const walk = (x - startPos) * 2; // Desplazamiento al mover el mouse
+    logosContainer.scrollLeft = scrollLeft - walk;
+  });
+
+  // Para dispositivos móviles
+  logosContainer.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    startPos = e.touches[0].pageX - logosContainer.offsetLeft;
+    scrollLeft = logosContainer.scrollLeft;
+  });
+
+  logosContainer.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - logosContainer.offsetLeft;
+    const walk = (x - startPos) * 2; // Desplazamiento al deslizar
+    logosContainer.scrollLeft = scrollLeft - walk;
+  });
+
+  logosContainer.addEventListener("touchend", () => {
+    isDragging = false;
+  });
 </script>
